@@ -1,1 +1,2 @@
-# ayates
+
+python app.py
