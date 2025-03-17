@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل الفيديو</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>تم إنشاء الفيديو بنجاح!</h1>
+        
+        <div class="success-message">
+            <p>يمكنك الآن تحميل الفيديو الخاص بك.</p>
+        </div>
+        
+        <div class="download-section">
+            <a href="{{ url_for('get_video', video_id=video_id) }}" class="btn download-btn">تحميل الفيديو</a>
+            <a href="{{ url_for('index') }}" class="btn">العودة للصفحة الرئيسية</a>
+        </div>
+    </div>
+</body>
+</html>
